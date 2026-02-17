@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Ideas por Bloques</string>
+    <string name="categories">Categorías</string>
+    <string name="ideas">Ideas</string>
+    <string name="add">Añadir</string>
+    <string name="edit">Editar</string>
+    <string name="delete">Eliminar</string>
+    <string name="mark_done">Marcar como hecha</string>
+    <string name="mark_undone">Marcar como pendiente</string>
+    <string name="category_name">Nombre de la categoría</string>
+    <string name="idea_title">Título</string>
+    <string name="idea_description">Descripción (opcional)</string>
+    <string name="save">Guardar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="empty_state_categories">Aún no tienes categorías. Pulsa + para crear una.</string>
+    <string name="empty_state_ideas">Aún no hay ideas aquí. Pulsa + para añadir una.</string>
+    <string name="search">Buscar…</string>
+</resources>
