@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="brand_background">#F7F4EF</color>
+    <color name="brand_on_primary">#FFFFFF</color>
+    <color name="brand_on_primary_container">#18384C</color>
+    <color name="brand_outline">#CDC5B9</color>
+    <color name="brand_outline_soft">#DDD5CA</color>
+    <color name="brand_primary">#2F5D7C</color>
+    <color name="brand_primary_container">#DCEAF4</color>
+    <color name="brand_scrim">#11141A</color>
+    <color name="brand_secondary">#6A7280</color>
+    <color name="brand_secondary_container">#ECEFF4</color>
+    <color name="brand_success">#5D8A61</color>
+    <color name="brand_surface">#FFFDFC</color>
+    <color name="brand_surface_alt">#F1ECE4</color>
+    <color name="brand_surface_variant">#E7E1D8</color>
+    <color name="brand_tertiary">#C48A3A</color>
+    <color name="brand_text">#1F2430</color>
+    <color name="brand_text_muted">#707784</color>
+    <plurals name="category_count">
+        <item quantity="one">%d bloque</item>
+        <item quantity="other">%d bloques</item>
+    </plurals>
+    <plurals name="idea_count">
+        <item quantity="one">%d idea</item>
+        <item quantity="other">%d ideas</item>
+    </plurals>
+    <string name="add">Añadir</string>
+    <string name="app_name">Ideas por Bloques</string>
+    <string name="cancel">Cancelar</string>
+    <string name="categories">Categorías</string>
+    <string name="categories_overline">Vista general</string>
+    <string name="categories_section_title">Categorías activas</string>
+    <string name="categories_subtitle">Agrupa temas, proyectos o notas para encontrarlo todo de un vistazo.</string>
+    <string name="categories_title">Tus bloques creativos</string>
+    <string name="categories_toolbar_subtitle">Organiza tus ideas en bloques claros</string>
+    <string name="category_item_hint">Abrir categoría</string>
+    <string name="category_name">Nombre de la categoría</string>
+    <string name="delete">Eliminar</string>
+    <string name="edit">Editar</string>
+    <string name="empty_categories_message">Crea una categoría para separar ideas por tema, cliente o proyecto.</string>
+    <string name="empty_categories_title">Todavía no hay bloques</string>
+    <string name="empty_ideas_message">Añade una idea y conviértela en una lista clara de siguientes pasos.</string>
+    <string name="empty_ideas_title">Este bloque está vacío</string>
+    <string name="empty_state_categories">Aún no tienes categorías. Pulsa + para crear una.</string>
+    <string name="empty_state_ideas">Aún no hay ideas aquí. Pulsa + para añadir una.</string>
+    <string name="idea_description">Descripción (opcional)</string>
+    <string name="idea_done">Hecha</string>
+    <string name="idea_pending">Pendiente</string>
+    <string name="idea_title">Título</string>
+    <string name="ideas">Ideas</string>
+    <string name="ideas_overline">Espacio de enfoque</string>
+    <string name="ideas_section_title">Listado de ideas</string>
+    <string name="ideas_subtitle">Filtra, marca avances y mantén cada bloque limpio y accionable.</string>
+    <string name="ideas_title">Ideas en movimiento</string>
+    <string name="ideas_toolbar_subtitle">Detalle del bloque</string>
+    <string name="mark_done">Marcar como hecha</string>
+    <string name="mark_undone">Marcar como pendiente</string>
+    <string name="new_category">Nueva categoría</string>
+    <string name="new_idea">Nueva idea</string>
+    <string name="save">Guardar</string>
+    <string name="search">Buscar…</string>
+    <string name="search_hint">Buscar por título o descripción</string>
+    <string name="search_placeholder">Escribe para filtrar rápido</string>
+    <style name="Theme.IdeasPorBloques" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/brand_primary</item>
+        <item name="colorOnPrimary">@color/brand_on_primary</item>
+        <item name="colorPrimaryContainer">@color/brand_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/brand_on_primary_container</item>
+        <item name="colorSecondary">@color/brand_secondary</item>
+        <item name="colorSecondaryContainer">@color/brand_secondary_container</item>
+        <item name="colorTertiary">@color/brand_tertiary</item>
+        <item name="colorSurface">@color/brand_surface</item>
+        <item name="colorSurfaceVariant">@color/brand_surface_variant</item>
+        <item name="backgroundColor">@color/brand_background</item>
+        <item name="android:colorBackground">@color/brand_background</item>
+        <item name="colorOutline">@color/brand_outline</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/brand_background</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.Ideas.Dialog</item>
+    </style>
+    <style name="ThemeOverlay.Ideas.Dialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="colorSurface">@color/brand_surface</item>
+        <item name="android:windowBackground">@drawable/bg_dialog_surface</item>
+        <item name="materialAlertDialogBodyTextStyle">@style/TextAppearance.Material3.BodyMedium</item>
+    </style>
+    <style name="Widget.Ideas.Badge" parent="">
+        <item name="android:textColor">@color/brand_on_primary_container</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:background">@drawable/bg_badge</item>
+    </style>
+    <style name="Widget.Ideas.EmptyIconCard" parent="Widget.Material3.CardView.Filled">
+        <item name="cardBackgroundColor">@color/brand_surface_alt</item>
+        <item name="cardCornerRadius">18dp</item>
+        <item name="cardElevation">0dp</item>
+    </style>
+    <style name="Widget.Ideas.FeatureCard" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardBackgroundColor">@color/brand_surface</item>
+        <item name="cardCornerRadius">28dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="strokeColor">@color/brand_outline_soft</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+    <style name="Widget.Ideas.ItemCard" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardBackgroundColor">@color/brand_surface</item>
+        <item name="cardCornerRadius">24dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="strokeColor">@color/brand_outline_soft</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+    <style name="Widget.Ideas.Toolbar" parent="Widget.Material3.Toolbar">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="titleTextColor">@color/brand_text</item>
+        <item name="subtitleTextColor">@color/brand_text_muted</item>
+        <item name="navigationIconTint">@color/brand_text</item>
+    </style>
+</resources>

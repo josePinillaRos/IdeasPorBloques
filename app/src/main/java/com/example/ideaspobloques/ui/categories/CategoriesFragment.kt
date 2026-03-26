@@ -33,6 +33,7 @@ class CategoriesFragment : Fragment() {
         vm.categories.observe(viewLifecycleOwner) { list ->
             adapter.submitList(list)
             binding.emptyView.visibility = if (list.isNullOrEmpty()) View.VISIBLE else View.GONE
+            binding.txtCategoryCount.text = resources.getQuantityString(R.plurals.category_count, list.size, list.size)
         }
         binding.fabAdd.setOnClickListener { showAddDialog() }
     }
@@ -52,7 +53,7 @@ class CategoriesFragment : Fragment() {
     }
     private fun confirmDelete(category: CategoryEntity) {
         AlertDialog.Builder(requireContext())
-            .setMessage(getString(R.string.delete) + " "" + category.name + ""?")
+            .setMessage(getString(R.string.delete) + " \"" + category.name + "\"?")
             .setPositiveButton(R.string.delete) { _, _ -> vm.deleteCategory(category) }
             .setNegativeButton(R.string.cancel, null)
             .show()

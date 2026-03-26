@@ -15,4 +15,25 @@
     <string name="empty_state_categories">Aún no tienes categorías. Pulsa + para crear una.</string>
     <string name="empty_state_ideas">Aún no hay ideas aquí. Pulsa + para añadir una.</string>
     <string name="search">Buscar…</string>
+    <string name="categories_toolbar_subtitle">Organiza tus ideas en bloques claros</string>
+    <string name="categories_overline">Vista general</string>
+    <string name="categories_title">Tus bloques creativos</string>
+    <string name="categories_subtitle">Agrupa temas, proyectos o notas para encontrarlo todo de un vistazo.</string>
+    <string name="categories_section_title">Categorías activas</string>
+    <string name="ideas_overline">Espacio de enfoque</string>
+    <string name="ideas_title">Ideas en movimiento</string>
+    <string name="ideas_subtitle">Filtra, marca avances y mantén cada bloque limpio y accionable.</string>
+    <string name="ideas_toolbar_subtitle">Detalle del bloque</string>
+    <string name="ideas_section_title">Listado de ideas</string>
+    <string name="new_category">Nueva categoría</string>
+    <string name="new_idea">Nueva idea</string>
+    <string name="search_hint">Buscar por título o descripción</string>
+    <string name="search_placeholder">Escribe para filtrar rápido</string>
+    <string name="empty_categories_title">Todavía no hay bloques</string>
+    <string name="empty_categories_message">Crea una categoría para separar ideas por tema, cliente o proyecto.</string>
+    <string name="empty_ideas_title">Este bloque está vacío</string>
+    <string name="empty_ideas_message">Añade una idea y conviértela en una lista clara de siguientes pasos.</string>
+    <string name="category_item_hint">Abrir categoría</string>
+    <string name="idea_done">Hecha</string>
+    <string name="idea_pending">Pendiente</string>
 </resources>

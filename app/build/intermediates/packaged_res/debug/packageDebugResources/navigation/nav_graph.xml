@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/categoriesFragment">
+    <fragment
+        android:id="@+id/categoriesFragment"
+        android:name="com.example.ideaspobloques.ui.categories.CategoriesFragment"
+        android:label="@string/categories">
+        <action
+            android:id="@+id/action_categories_to_ideas"
+            app:destination="@id/ideasFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ideasFragment"
+        android:name="com.example.ideaspobloques.ui.ideas.IdeasFragment"
+        android:label="@string/ideas">
+        <argument
+            android:name="categoryId"
+            app:argType="integer" />
+        <argument
+            android:name="categoryName"
+            app:argType="string" />
+    </fragment>
+</navigation>

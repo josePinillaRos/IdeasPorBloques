@@ -1,6 +1,8 @@
 package com.example.ideaspobloques.ui.ideas
+import android.graphics.Paint
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.CompoundButton
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
@@ -27,6 +29,14 @@ class IdeaAdapter(
         holder.b.txtTitle.text = item.title
         holder.b.txtDescription.isVisible = !item.description.isNullOrBlank()
         holder.b.txtDescription.text = item.description
+        holder.b.txtTitle.paintFlags = if (item.isDone) {
+            holder.b.txtTitle.paintFlags or Paint.STRIKE_THRU_TEXT_FLAG
+        } else {
+            holder.b.txtTitle.paintFlags and Paint.STRIKE_THRU_TEXT_FLAG.inv()
+        }
+        holder.b.txtTitle.alpha = if (item.isDone) 0.65f else 1f
+        holder.b.txtDescription.alpha = if (item.isDone) 0.6f else 1f
+        holder.b.chkDone.setOnCheckedChangeListener(null as CompoundButton.OnCheckedChangeListener?)
         holder.b.chkDone.isChecked = item.isDone
         holder.b.chkDone.setOnCheckedChangeListener { _, _ -> onToggle(item) }
         holder.b.btnDelete.setOnClickListener { onDelete(item) }

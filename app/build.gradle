@@ -7,6 +7,16 @@ plugins {
 android {
     namespace 'com.example.ideaspobloques'
     compileSdk 34
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+
     defaultConfig {
         applicationId 'com.example.ideaspobloques'
         minSdk 24
@@ -36,8 +46,8 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.8.4'
 
     // Navigation
-    implementation 'androidx.navigation:navigation-fragment-ktx:2.8.0'
-    implementation 'androidx.navigation:navigation-ui-ktx:2.8.0'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.9.7'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.9.7'
 
     // Room
     implementation 'androidx.room:room-runtime:2.6.1'

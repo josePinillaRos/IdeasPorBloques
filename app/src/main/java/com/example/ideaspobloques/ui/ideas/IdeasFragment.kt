@@ -37,9 +37,10 @@ class IdeasFragment : Fragment() {
             onDelete = { confirmDelete(it) }
         )
         binding.recycler.adapter = adapter
-        vm.ideas.observe(viewLifecycleOwner) { list ->
+        vm.ideas.observe(viewLifecycleOwner) { list: List<IdeaEntity> ->
             adapter.submitList(list)
-            binding.emptyView.visibility = if (list.isNullOrEmpty()) View.VISIBLE else View.GONE
+            binding.emptyView.visibility = if (list.isEmpty()) View.VISIBLE else View.GONE
+            binding.txtIdeaCount.text = resources.getQuantityString(R.plurals.idea_count, list.size, list.size)
         }
         binding.fabAdd.setOnClickListener { showAddDialog() }
         binding.edtSearch.addTextChangedListener(object : TextWatcher {
@@ -68,7 +69,7 @@ class IdeasFragment : Fragment() {
     }
     private fun confirmDelete(idea: IdeaEntity) {
         AlertDialog.Builder(requireContext())
-            .setMessage(getString(R.string.delete) + " "" + idea.title + ""?")
+            .setMessage(getString(R.string.delete) + " \"" + idea.title + "\"?")
             .setPositiveButton(R.string.delete) { _, _ -> vm.deleteIdea(idea) }
             .setNegativeButton(R.string.cancel, null)
             .show()

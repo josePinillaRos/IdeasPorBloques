@@ -1,0 +1,28 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.ideaspobloques.app-mergeDebugResources-49:/values-v27/values-v27.xml",
+            "map": [
+                {
+                    "source": "C:\\dev\\IdeasPorBloques\\app\\src\\main\\res\\values-v27\\themes.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "59",
+                        "endLines": "21",
+                        "endColumns": "12",
+                        "endOffsets": "1394"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "20",
+                        "endColumns": "12",
+                        "endOffsets": "1374"
+                    }
+                }
+            ]
+        }
+    ]
+}

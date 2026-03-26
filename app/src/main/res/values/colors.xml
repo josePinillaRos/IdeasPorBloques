@@ -1,4 +1,19 @@
 <resources>
-    <color name="md_theme_primary">#6750A4</color>
-    <color name="md_theme_background">#FFFFFF</color>
+    <color name="brand_primary">#2F5D7C</color>
+    <color name="brand_on_primary">#FFFFFF</color>
+    <color name="brand_primary_container">#DCEAF4</color>
+    <color name="brand_on_primary_container">#18384C</color>
+    <color name="brand_secondary">#6A7280</color>
+    <color name="brand_secondary_container">#ECEFF4</color>
+    <color name="brand_tertiary">#C48A3A</color>
+    <color name="brand_background">#F7F4EF</color>
+    <color name="brand_surface">#FFFDFC</color>
+    <color name="brand_surface_alt">#F1ECE4</color>
+    <color name="brand_surface_variant">#E7E1D8</color>
+    <color name="brand_outline">#CDC5B9</color>
+    <color name="brand_outline_soft">#DDD5CA</color>
+    <color name="brand_text">#1F2430</color>
+    <color name="brand_text_muted">#707784</color>
+    <color name="brand_success">#5D8A61</color>
+    <color name="brand_scrim">#11141A</color>
 </resources>

@@ -1,0 +1,10 @@
+<resources>
+    <plurals name="category_count">
+        <item quantity="one">%d bloque</item>
+        <item quantity="other">%d bloques</item>
+    </plurals>
+    <plurals name="idea_count">
+        <item quantity="one">%d idea</item>
+        <item quantity="other">%d ideas</item>
+    </plurals>
+</resources>
